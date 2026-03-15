@@ -23,8 +23,8 @@ const PopupSubscribe = ({ open, onClose }: PopupSubscribeProps) => {
 				method: "GET"
 			})
 			const data = await res.json()
-			if (data.success) {
-				toast.success("Your message has been sent successfully!")
+			if (data?.status === "success") {
+				toast.success("Thank you for your interest! We'll be in touch soon.")
 				setEmail("")
 				setMessage("")
 			} else {
