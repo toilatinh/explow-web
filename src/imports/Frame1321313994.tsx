@@ -286,7 +286,7 @@ function Elements2() {
 
 function Frame12() {
   return (
-    <div className="content-stretch flex items-end justify-between relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col tablet:flex-row gap-[32px] tablet:gap-0 items-start tablet:items-end justify-between relative shrink-0 w-full">
       <p className="font-['Manrope',sans-serif] font-bold leading-[1.29] not-italic relative shrink-0 text-[15px] text-black tracking-[-0.15px] w-full tablet:w-[412px] whitespace-pre-wrap">{`Imagine the possibility of communicating with your future self 1 to  3 years ahead. How might such an encounter influence present decision-making?`}</p>
       <div className="overflow-clip relative shrink-0 size-[24px]" data-name="note-04">
         <Elements2 />

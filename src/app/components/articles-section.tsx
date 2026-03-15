@@ -21,7 +21,7 @@ export function ArticlesSection() {
               <p>2 Ariticles</p>
             </div>
           </div>
-          <div className="flex items-end justify-between w-full">
+          <div className="flex flex-col tablet:flex-row gap-[32px] tablet:gap-0 items-start tablet:items-end justify-between w-full">
             <p className="font-['Manrope',sans-serif] font-bold text-[15px] leading-[1.29] tracking-[-0.15px] text-black w-full tablet:w-[412px]">
               {`Imagine the possibility of communicating with your future self 1 to  3 years ahead. How might such an encounter influence present decision-making?`}
             </p>
