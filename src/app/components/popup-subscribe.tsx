@@ -28,6 +28,8 @@ const PopupSubscribe = ({ open, onClose }: PopupSubscribeProps) => {
 				toast.success("Your message has been sent successfully!")
 				setEmail("")
 				setMessage("")
+			} else {
+				toast.error("Failed to submit. Please try again.")
 			}
 		} catch (error) {
 			toast.error("Network error")
