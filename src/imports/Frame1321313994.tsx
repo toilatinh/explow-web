@@ -287,7 +287,7 @@ function Elements2() {
 function Frame12() {
   return (
     <div className="content-stretch flex items-end justify-between relative shrink-0 w-full">
-      <p className="font-['Manrope',sans-serif] font-bold leading-[1.29] not-italic relative shrink-0 text-[15px] text-black tracking-[-0.15px] w-[412px] whitespace-pre-wrap">{`Imagine the possibility of communicating with your future self 1 to  3 years ahead. How might such an encounter influence present decision-making?`}</p>
+      <p className="font-['Manrope',sans-serif] font-bold leading-[1.29] not-italic relative shrink-0 text-[15px] text-black tracking-[-0.15px] w-full tablet:w-[412px] whitespace-pre-wrap">{`Imagine the possibility of communicating with your future self 1 to  3 years ahead. How might such an encounter influence present decision-making?`}</p>
       <div className="overflow-clip relative shrink-0 size-[24px]" data-name="note-04">
         <Elements2 />
       </div>
@@ -416,7 +416,7 @@ function Frame17() {
   return (
     <div className="bg-[#f7f7f7] relative shrink-0 w-full">
       <div className="flex flex-col items-center size-full">
-        <div className="content-stretch flex flex-col gap-[80px] items-center pb-[80px] pt-[72px] px-[40px] tablet:px-[100px] min-[1280px]:px-[200px] relative w-full">
+        <div className="content-stretch flex flex-col gap-[40px] tablet:gap-[80px] items-center pb-[80px] pt-[72px] px-[40px] tablet:px-[100px] min-[1280px]:px-[200px] relative w-full">
           <Frame9 />
           <Frame16 />
         </div>

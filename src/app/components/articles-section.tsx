@@ -6,7 +6,7 @@ import { NoteIcon, AiBusinessLogo } from "./icons";
 export function ArticlesSection() {
   return (
     <section className="bg-[#f7f7f7] w-full">
-      <div className="flex flex-col gap-[80px] items-center pb-[80px] pt-[72px] px-[200px]">
+      <div className="flex flex-col gap-[40px] tablet:gap-[80px] items-center pb-[80px] pt-[72px] px-[40px] tablet:px-[100px] min-[1280px]:px-[200px]">
         {/* Header */}
         <div className="flex flex-col gap-[32px] items-start w-full">
           <div className="flex items-start justify-between w-full">
@@ -22,7 +22,7 @@ export function ArticlesSection() {
             </div>
           </div>
           <div className="flex items-end justify-between w-full">
-            <p className="font-['Manrope',sans-serif] font-bold text-[15px] leading-[1.29] tracking-[-0.15px] text-black w-[412px]">
+            <p className="font-['Manrope',sans-serif] font-bold text-[15px] leading-[1.29] tracking-[-0.15px] text-black w-full tablet:w-[412px]">
               {`Imagine the possibility of communicating with your future self 1 to  3 years ahead. How might such an encounter influence present decision-making?`}
             </p>
             <NoteIcon />
@@ -30,7 +30,7 @@ export function ArticlesSection() {
         </div>
 
         {/* Article cards */}
-        <div className="flex gap-[32px] items-start w-[1256px]">
+        <div className="flex flex-col min-[1280px]:flex-row gap-[32px] items-stretch min-[1280px]:items-start w-full min-[1280px]:w-[1256px]">
           {/* Card 1 */}
           <a 
             href="https://aibusiness.com/nlp/-future-you-ai-allows-you-to-meet-your-future-self" 
