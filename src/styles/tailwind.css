@@ -1,0 +1,14 @@
+@import 'tailwindcss' source(none);
+@source '../**/*.{js,ts,jsx,tsx}';
+
+@import 'tw-animate-css';
+
+@theme {
+  /* ── Responsive Breakpoints ─────────────────────────────────────
+     Desktop  → default (no prefix needed, anything above 834px)
+     Tablet   → max-width: 834px  →  class prefix: "tablet:"
+     Phone    → max-width: 430px  →  class prefix: "phone:"
+  ─────────────────────────────────────────────────────────────── */
+  --breakpoint-tablet: 834px;
+  --breakpoint-phone: 430px;
+}
