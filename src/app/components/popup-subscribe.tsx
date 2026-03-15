@@ -2,7 +2,6 @@
 import React from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
-import logoStGray from "../../assets/logo-st-gray.png"
 import { toast } from "sonner"
 import imgDownload41 from "figma:asset/3e71587c4d1631e18396dc7e1260ca559824b18a.png";
 
@@ -18,13 +17,13 @@ const PopupSubscribe = ({ open, onClose }: PopupSubscribeProps) => {
 
 	const handleSubmit = async () => {
 		try {
+			const url = `https://script.google.com/macros/s/AKfycbx2MZ24bWa3aQtcvM_Q7nJ5E6RJyT4_oRfvlZLnfHRhvMSCy3sksJbBIkuGjm-NNyyW/exec?email=${encodeURIComponent(email)}&message=${encodeURIComponent(message)}`
 			setLoading(true)
-			const res = await fetch("https://explow.me/api/submit", {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify({ email, message }),
+			const res = await fetch(url, {
+				method: "GET"
 			})
-			if (res.ok) {
+			const data = await res.json()
+			if (data.success) {
 				toast.success("Your message has been sent successfully!")
 				setEmail("")
 				setMessage("")
