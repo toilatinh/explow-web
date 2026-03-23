@@ -9,3 +9,5 @@ declare module "*.mov" {
   const src: string
   export default src
 }
+
+declare function gtag(...args: unknown[]): void;
